@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+		Your browser does not support the canvas element.
+	</canvas>
+
+	<script type="text/javascript">
+
+		var c=document.getElementById("myCanvas");
+		var cxt=c.getContext("2d");
+		var img=new Image()
+		img.src="http://b.hiphotos.baidu.com/image/h%3D200/sign=52b5924e8b5494ee982208191df4e0e1/c2fdfc039245d6887554a155a3c27d1ed31b24e8.jpg"
+		cxt.drawImage(img,0,0);//向画布上绘制图像、画布或视频
+
+	</script>
+</body>
+</html>

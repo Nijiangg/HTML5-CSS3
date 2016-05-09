@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+		Your browser does not support the canvas element.
+	</canvas>
+	<script type="text/javascript">
+		var c=document.getElementById('myCanvas');
+		var cxt=c.getContext('2d');
+		cxt.moveTo(10,10);//把路径移动到画布中的指定点，不创建线条
+		cxt.lineTo(150,50);//添加一个新点，然后在画布中创建从该点到最后指定点的线条
+		cxt.lineTo(10,50);
+		cxt.stroke();//绘制已定义的路径
+	</script>  
+</body>
+</html>
